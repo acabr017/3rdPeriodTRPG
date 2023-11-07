@@ -40,3 +40,21 @@ class Character:
         else:
             print("You miss and do no damage!")
 
+
+
+class Warrior(Character):
+    """
+    Warrior class that will extend the Character class. 
+    """
+
+    def __init__(self, name):
+        self.name = name
+        self.str = 10
+        self.defense = 8
+        self.hp = 7
+        self.dex = 5
+        self.luck = 4
+        self.int = 3
+        self.equipped_weapon = "Sword"
+        
+

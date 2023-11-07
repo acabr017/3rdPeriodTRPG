@@ -1,1 +1,42 @@
-# This is where Cabrera will provide his parts of the project.
+import random
+
+class Character:
+    """ 
+    This is the parent class of all characters. 
+    Player characters and Enemies will extended this class and 
+    be child classes. 
+    """
+
+    def __init__(self,name,strength,dexterity,health,luck,intelligence,defense):
+        self.name = name
+        self.str = strength
+        self.dex = dexterity
+        self.hp = health
+        self.luck = luck
+        self.int = intelligence
+        self.defense = defense
+        self.equipped_weapon = None
+        
+    def __str__(self):
+        return f"Name: {self.name} \n \\
+            Strength: {self.strength} \n \\
+            Dexterity: {self.dex} \n \\
+            Defense: {self.defense} \n \\
+            Health: {self.hp} \n \\
+            Intelligence: {self.int} \n \\
+            Luck: {self.luck} \n \\
+        "
+    
+    def _do_damage(self,weapon:weapon)->int:
+        pass
+
+
+    def attack(self,enemy:Character):
+        self_attack = max(self.str,self.dex) + random.randint(0,self.luck)
+        enemy_defense = enemy.defense + random.randint(0,enemy.luck)
+        if self_attack > enemy_defense:
+            dmg = self._do_damage(self.equipped_weapon)
+            print(f"You do {dmg} point(s) of damage!")
+        else:
+            print("You miss and do no damage!")
+

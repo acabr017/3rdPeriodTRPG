@@ -64,9 +64,9 @@ class Warrior(Character):
 
 class Ranger(Character):
     """
-    Warrior class that will extend the Character class.
+    Ranger class that will extend the Character class.
     Starting Weapon: Bow and Arrows
-    Starting Spells: 
+    Starting Spells: True Strike (increases chance to hit)
     """
 
     def __init__(self, name):

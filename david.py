@@ -18,10 +18,10 @@ down='South','down'
 left='West','Left'
 East='East','Right'
 
-Searched_spots= {'a1':False,'a2':False 'a3':False
-                'a1':False,'a2':False 'a3':False
-                'a1':False,'a2':False 'a3':False
-                'a1':False,'a2':False 'a3':False
+Searched_spots= {'a1':False,'a2':False, 'a3':False,
+                'b1':False,'b2':False, 'b3':False,
+                'c1':False,'c2':False, 'c3':False,
+                'd1':False,'d2':False, 'd3':False,
                 }
      
 

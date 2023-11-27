@@ -26,3 +26,4 @@ Searched_spots= {'a1':False,'a2':False 'a3':False
      
 
 Dungeon_Map= {
+          a1{

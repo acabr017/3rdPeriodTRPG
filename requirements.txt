@@ -9,4 +9,5 @@ python-editor==1.0.4
 readchar==4.0.5
 simple-term-menu==1.6.3
 six==1.16.0
+termcolor==2.3.0
 wcwidth==0.2.10

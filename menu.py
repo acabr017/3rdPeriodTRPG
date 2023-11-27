@@ -1,29 +1,5 @@
-# class Menu:
-
-#     def __init__(self,options:list):
-#         self.options = options
-
-#     def display(self):
-# import keyboard
-
-# options = ["A", "B", "C"]
-# cursor = 0
-# while True:
-#     for i, item in enumerate(options):
-#         if i == cursor:
-#             print(f"> {item}")
-#         else:
-#             print(item)
-#     if keyboard.is_pressed("up"):
-#         if cursor == 0:
-#             cursor = len(options) - 1
-#         else:
-#             cursor -= 1
-#     elif keyboard.is_pressed("down"):
-#         if cursor == len(options) - 1:
-#             cursor = 0
-#         else:
-#             cursor += 1
+# Sample Menu
+# Check docs for more info: https://pypi.org/project/cutie/
 
 import cutie
 
